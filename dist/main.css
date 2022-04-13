@@ -1,0 +1,202 @@
+/*!*************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/assets/style/main.scss ***!
+  \*************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;200;300;400;800;900&display=swap);
+/*!*****************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/assets/style/main.scss (1) ***!
+  \*****************************************************************************************************************************************************/
+.input-form-component {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; }
+  .input-form-component .title {
+    margin-top: 10px;
+    color: #43e743; }
+  .input-form-component .text-danger {
+    color: red;
+    position: absolute;
+    top: 35px;
+    font-size: 14px; }
+  .input-form-component .input-content {
+    position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    width: 100%; }
+    .input-form-component .input-content .input {
+      margin: 0 10px;
+      width: 60px;
+      height: 20px;
+      outline: none;
+      font-size: 15px;
+      padding-left: 5px;
+      font-weight: 700; }
+  .input-form-component button {
+    margin: 20px 0;
+    width: 50%;
+    background-color: blue;
+    outline: none;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s; }
+    .input-form-component button:hover {
+      background-color: #3b3be8;
+      box-shadow: 0 0 10px #3b3be8, 0 0 10px #3b3be8; }
+
+@media (min-width: 1024px) {
+  .input-form-component {
+    width: calc(100% - 74%);
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white; }
+    .input-form-component .title {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 0; }
+    .input-form-component .input-content {
+      width: 90%;
+      font-size: 18px; }
+      .input-form-component .input-content input {
+        font-size: 17px; }
+    .input-form-component .text-danger {
+      position: absolute;
+      top: 32px;
+      font-size: 15px; }
+    .input-form-component button {
+      margin-top: 20px;
+      padding: 10px; } }
+
+.container {
+  background: lightgray; }
+  .container .vending-title {
+    text-align: center;
+    margin-bottom: 20px; }
+  .container .vending-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; }
+    .container .vending-content .vending-item {
+      background-color: #fff;
+      border: 2px solid green;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      padding: 10px 0; }
+      .container .vending-content .vending-item img {
+        width: 100px;
+        height: 100px; }
+      .container .vending-content .vending-item .content {
+        background-color: #fff;
+        width: 130px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .container .vending-content .vending-item .content__code {
+          font-weight: 800; }
+          .container .vending-content .vending-item .content__code span {
+            color: red; }
+
+@media (min-width: 1024px) {
+  .container {
+    background: lightgray;
+    width: 74%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center; }
+    .container .vending-title {
+      margin-bottom: 50px; }
+    .container .vending-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 50px;
+      justify-items: center;
+      text-align: left; }
+      .container .vending-content .vending-item {
+        padding: 10px;
+        width: 290px;
+        height: 190px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 0; }
+        .container .vending-content .vending-item img {
+          position: relative;
+          width: 160px;
+          height: 160px;
+          z-index: 2; }
+        .container .vending-content .vending-item .content {
+          padding-left: 0; } }
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  z-index: 2;
+  color: #000; }
+  .modal.active {
+    opacity: 1;
+    pointer-events: all; }
+  .modal__content {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffff;
+    width: 80vw;
+    transform: scale(0.5);
+    transition: 0.4s all;
+    display: flex;
+    justify-content: center; }
+    .modal__content.active {
+      transform: scale(1); }
+
+@media (min-width: 1024px) {
+  .modal {
+    display: flex;
+    align-items: center;
+    font-size: 19px; }
+    .modal__content {
+      height: 100px;
+      width: 40vw; }
+      .modal__content p {
+        display: flex;
+        align-items: center; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none; }
+
+.App {
+  font-family: "Anek Tamil", sans-serif; }
+
+@media (min-width: 1024px) {
+  .App {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Anek Tamil", sans-serif; } }
+
